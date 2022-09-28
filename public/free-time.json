@@ -1,0 +1,44 @@
+[
+    {
+      "id": 1,
+      "name": "Gardening",
+      "description": "I usually read my favorite books or do gardening during my free time. It keeps me relax and at the same time, I learn something new or do some exercise.",
+      "img": "https://images.unsplash.com/photo-1627989147125-a004d05946d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
+      "time": 1.5
+    },
+    {
+      "id": 2,
+      "name": "Reading",
+      "description": "Reading, where reading is one of the most beautiful and wonderful activities and useful works.In a",
+      "img": "https://images.unsplash.com/photo-1569537001294-a2f2e3a978d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
+      "time": 1
+    },
+    {
+      "id": 3,
+      "name": "Meditation",
+      "description": "Meditate to clear your mind. Sit straight and take some deep breaths. Fill up your lungs all the way with air, and exhale as deeply as you can",
+      "img": "https://img.freepik.com/premium-vector/stress-relief-problem-solving-concepts-man-thinking-about-business-lotus-pose_165488-601.jpg?w=2000",
+      "time": 15
+    },
+    {
+      "id": 4,
+      "name": "Football",
+      "description": "Association football, more commonly known as simply football or soccer, is a team sport played between two teams of 11 players who primarily use their feet to propel the ball around a rectangular field called a pitch.",
+      "img": "https://images.unsplash.com/photo-1606925797300-0b35e9d1794e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=581&q=80",
+      "time": 2
+    },
+    {
+      "id": 5,
+      "name": "Photography",
+      "description": "Photography is the art, application, and practice of creating durable images by recording light, either electronically by means of an image sensor, or chemically by means of a light-sensitive material such as photographic film.",
+      "img": "https://images.unsplash.com/photo-1589016025017-a2080e95326f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
+      "time": 1
+    },
+    {
+      "id": 6,
+      "name": "Hiking",
+      "description": "Hiking is a long, vigorous walk, usually on trails or footpaths in the countryside. Walking for pleasure developed in Europe during the eighteenth century. Religious pilgrimages have existed much longer but they involve walking long distances for a spiritual purpose associated with specific religions.",
+      "img": "https://images.unsplash.com/photo-1660314002642-77bbfe3e9b48?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
+      "time": 2
+    }
+  ]
