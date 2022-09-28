@@ -1,27 +1,40 @@
 import React, { useEffect, useState } from 'react';
 import ShowActive from '../showActive/ShowActive';
+import SideBar from '../sideBar/SideBar';
 import './Home.css';
 
 const Home = () => {
     const [activities , setActivities] = useState([]);
+    // const [sideBar , setSideBar] = useState([]);
 
     useEffect( () => {
         fetch('free-time.json')
         .then(rest => rest.json())
         .then(data => setActivities(data))
-    },[])
+    },[]);
+
+    const addTime = (active) => {
+        console.log(active)
+    }
+
+
     return (
         <div className='row container-fluid'>
-            <div className='header col-9'>
+            <div className=' col-9'>
+            <h4 className='m-5'>MY FREE TIME ACTIVITIES</h4>
+            <p className='m-5'>You can see my free time activities.</p>
+                <div className='header'>
                 {
                     activities.map(active => <ShowActive
                     key={active.id}
                     active={active}
+                    addTime={addTime}
                     ></ShowActive>)
                 }
+                </div>
             </div>
             <div className='col-3'>
-                    <h3>side bar</h3>
+                    <SideBar></SideBar>
             </div>
         </div>
     );
