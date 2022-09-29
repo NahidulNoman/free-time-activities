@@ -4,11 +4,15 @@ import Profile from '../profile/Profile';
 
 const SideBar = ({sideBar}) => {
     let newTime = 0;
-
     for(let side of sideBar){
         let yourTime = side.time
         newTime = newTime + yourTime
-    }
+    };
+
+
+
+
+
     return (
         <div>
             <Profile></Profile>
@@ -18,7 +22,7 @@ const SideBar = ({sideBar}) => {
                 <h5>Manage Free Time </h5>
                 <div className='d-flex justify-content-around m-3'>
                     <p>Total Time </p>
-                    <p>{newTime}</p>
+                    <p>{newTime} Hours</p>
                 </div>
                 <div className='d-flex justify-content-around m-3'>
                     <p>Break Time </p>

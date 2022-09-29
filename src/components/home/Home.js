@@ -17,12 +17,12 @@ const Home = () => {
         let getTime = [...sideBar, active]
         setSideBar(getTime)
     }
-    
+
     return (
         <div className='row container-fluid'>
             <div className=' col-9'>
-            <h4 className='m-5'>MY FREE TIME ACTIVITIES</h4>
-            <p className='m-5'>You can see my free time activities.</p>
+            <h4 className='m-5'><i className="fa-solid fa-timeline me-2"></i>  MY FREE TIME</h4>
+            <p className='mt-5'>You can see my free time activities.</p>
                 <div className='header'>
                 {
                     activities.map(active => <ShowActive
