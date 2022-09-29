@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Break = () => {
+    
     return (
         <div className='bg-white p-3 shadow-lg rounded-3 mt-3'>
              <div>

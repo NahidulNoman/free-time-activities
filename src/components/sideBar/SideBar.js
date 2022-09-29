@@ -1,6 +1,7 @@
 import React from 'react';
 import Break from '../break/Break';
 import Profile from '../profile/Profile';
+import Swal from 'sweetalert2'
 
 const SideBar = ({sideBar}) => {
     let newTime = 0;
@@ -8,9 +9,15 @@ const SideBar = ({sideBar}) => {
         let yourTime = side.time
         newTime = newTime + yourTime
     };
+    const handler = () =>{
+        Swal.fire(
+            'Good job!',
+            'You clicked the button!',
+            'success'
+          )
+    };
 
-
-
+    
     return (
         <div>
             <Profile></Profile>
@@ -26,7 +33,7 @@ const SideBar = ({sideBar}) => {
                     <h6 className='fw-bold'>Break Time </h6>
                     <p className='opacity-75'>000</p>
                 </div>
-            <button className='btn btn-primary w-100'>Activity Completed</button>
+            <button onClick={handler} className='btn btn-primary w-100'> Activity Completed</button>
             </div>
         </div>
     );
