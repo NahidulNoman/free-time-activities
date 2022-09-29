@@ -8,7 +8,7 @@ const ShowActive = ({active,addTime}) => {
             <div className="card shadow-lg" style={{width:'18rem'}}>
                 <img src={img} className="card-img-top" alt="..."/>
                 <div className="card-body">
-                    <h5 className="card-title">{name}</h5>
+                    <h5 className="card-title text-success">{name}</h5>
                     <p className="card-text fw-semibold opacity-75"> 
                         {description?description.slice(0,80)+'...':'no description here.'} <br />
                         <small className='fw-bold'>Time Spend : {time} Hours</small>

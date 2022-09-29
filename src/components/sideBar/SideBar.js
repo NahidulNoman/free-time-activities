@@ -12,7 +12,7 @@ const SideBar = ({sideBar}) => {
     const handler = () =>{
         Swal.fire(
             'Good job!',
-            'You clicked the button!',
+            'You completed your task!',
             'success'
           )
     };
@@ -20,11 +20,21 @@ const SideBar = ({sideBar}) => {
     const tenHandler = (hours) => {
         // console.log('clicked',hours)
         // const newHour = [...tenHour , hours]
-        setTenHour(hours)
+        setTenHour(hours);
+        // addLocal(hours);
     }
+    // const addLocal = () => {
+    //     const local = localStorage.getItem('break-time')
+    //     let stored = {};
+    //     if(local){
+    //         stored = JSON.parse(local)
+            // localStorage.setItem('break-time',stored)
+    //     }
+    //     else{
+    //         localStorage.setItem('break-time',JSON.stringify(stored))
+    //     }
+    // }
     
-
-
     return (
         <div>
             <Profile></Profile>
@@ -43,7 +53,7 @@ const SideBar = ({sideBar}) => {
                     <p className='opacity-75'>{tenHour} minutes
                     </p>
                 </div>
-            <button onClick={handler} className='btn btn-primary w-100'> Activity Completed</button>
+            <button onClick={handler} className='btn btn-primary w-100 fw-semibold'> Activity Completed</button>
             </div>
         </div>
     );
