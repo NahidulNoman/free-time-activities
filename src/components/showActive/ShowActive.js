@@ -5,7 +5,7 @@ const ShowActive = ({active,addTime}) => {
     const {description,img,name,time} = active;
     return (
         <div>
-            <div className="card" style={{width:'18rem'}}>
+            <div className="card shadow-lg" style={{width:'18rem'}}>
                 <img src={img} className="card-img-top" alt="..."/>
                 <div className="card-body">
                     <h5 className="card-title">{name}</h5>
@@ -13,7 +13,7 @@ const ShowActive = ({active,addTime}) => {
                         {description?description.slice(0,80)+'...':'no description here.'} <br />
                         <small>Time Spend : {time} Hours</small>
                     </p>
-                    <span onClick={()=>addTime(active)} className="btn btn-primary">Go somewhere</span>
+                    <span onClick={()=>addTime(active)} className="btn btn-primary w-100">Add To List</span>
                 </div>
                 </div>
         </div>

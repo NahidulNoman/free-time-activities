@@ -2,14 +2,14 @@ import React from 'react';
 
 const Break = () => {
     return (
-        <div>
+        <div className='bg-white p-3 shadow-lg rounded-3 mt-3'>
              <div>
-                <h5>Add A Break </h5>
-                <div className='bg-warning d-flex justify-content-evenly align-items-center m-3 p-3 rounded-4'>
-                   <span className='btn'>10</span>
-                   <span className='btn'>20</span>
-                   <span className='btn'>30</span>
-                   <span className='btn'>40</span>
+                <h5 className='fw-bold'>Add A Break </h5>
+                <div className='bg-light d-flex justify-content-evenly align-items-center m-3 p-3 rounded-4'>
+                   <button className='btn fw-bold'>10</button>
+                   <button className='btn fw-bold'>20</button>
+                   <button className='btn fw-bold'>30</button>
+                   <button className='btn fw-bold'>40</button>
                 </div>
             </div>
         </div>

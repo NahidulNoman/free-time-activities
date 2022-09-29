@@ -11,25 +11,23 @@ const SideBar = ({sideBar}) => {
 
 
 
-
-
     return (
         <div>
             <Profile></Profile>
             <Break></Break>
 
-            <div>
-                <h5>Manage Free Time </h5>
-                <div className='d-flex justify-content-around m-3'>
-                    <p>Total Time </p>
-                    <p>{newTime} Hours</p>
+            <div className='bg-white p-3 shadow-lg rounded-3 mt-3'>
+                <h5 className='fw-bold m-2'>Manage Free Time </h5>
+                <div className='d-flex justify-content-between align-items-center bg-light m-3 p-3 rounded-4'>
+                    <h6 className='fw-bold'>Total Time </h6>
+                    <p className='opacity-75'>{newTime} Hours</p>
                 </div>
-                <div className='d-flex justify-content-around m-3'>
-                    <p>Break Time </p>
-                    <p>000</p>
+                <div className='d-flex justify-content-between align-items-center bg-light m-3 p-3 rounded-4'>
+                    <h6 className='fw-bold'>Break Time </h6>
+                    <p className='opacity-75'>000</p>
                 </div>
+            <button className='btn btn-primary w-100'>Activity Completed</button>
             </div>
-            <button className='btn btn-primary'>Activity Completed</button>
         </div>
     );
 };

@@ -21,8 +21,10 @@ const Home = () => {
     return (
         <div className='row container-fluid'>
             <div className=' col-9'>
-            <h4 className='m-5'><i className="fa-solid fa-timeline me-2"></i>  MY FREE TIME</h4>
-            <p className='mt-5'>You can see my free time activities.</p>
+            <div className='bg-white p-3 shadow-lg rounded-3 mt-3 mb-4'>
+                <h4 className='m-5 fw-bold'><i className="fa-solid fa-timeline me-2"></i>  MY FREE TIME ROUTINE</h4>
+                <p className='mt-5 ms-5 fw-semibold'>You can see my free time activities below --</p>
+            </div>
                 <div className='header'>
                 {
                     activities.map(active => <ShowActive
