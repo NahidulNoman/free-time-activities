@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Break from '../break/Break';
 import Profile from '../profile/Profile';
 import Swal from 'sweetalert2'
@@ -16,22 +16,32 @@ const SideBar = ({sideBar}) => {
             'success'
           )
     };
-
+    const [tenHour , setTenHour] = useState([])
+    const tenHandler = (hours) => {
+        // console.log('clicked',hours)
+        // const newHour = [...tenHour , hours]
+        setTenHour(hours)
+    }
     
+
+
     return (
         <div>
             <Profile></Profile>
-            <Break></Break>
+            <Break
+            tenHandler={tenHandler}
+            ></Break>
 
             <div className='bg-white p-3 shadow-lg rounded-3 mt-3'>
                 <h5 className='fw-bold m-2'>Manage Free Time </h5>
                 <div className='d-flex justify-content-between align-items-center bg-light m-3 p-3 rounded-4'>
                     <h6 className='fw-bold'>Total Time </h6>
-                    <p className='opacity-75'>{newTime} Hours</p>
+                    <p className='opacity-75'>{newTime} hours</p>
                 </div>
                 <div className='d-flex justify-content-between align-items-center bg-light m-3 p-3 rounded-4'>
                     <h6 className='fw-bold'>Break Time </h6>
-                    <p className='opacity-75'>000</p>
+                    <p className='opacity-75'>{tenHour} minutes
+                    </p>
                 </div>
             <button onClick={handler} className='btn btn-primary w-100'> Activity Completed</button>
             </div>
