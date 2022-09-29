@@ -5,7 +5,7 @@ import './Home.css';
 
 const Home = () => {
     const [activities , setActivities] = useState([]);
-    // const [sideBar , setSideBar] = useState([]);
+    const [sideBar , setSideBar] = useState([]);
 
     useEffect( () => {
         fetch('free-time.json')
@@ -14,10 +14,10 @@ const Home = () => {
     },[]);
 
     const addTime = (active) => {
-        console.log(active)
+        let getTime = [...sideBar, active]
+        setSideBar(getTime)
     }
-
-
+    
     return (
         <div className='row container-fluid'>
             <div className=' col-9'>
@@ -34,7 +34,9 @@ const Home = () => {
                 </div>
             </div>
             <div className='col-3'>
-                    <SideBar></SideBar>
+                    <SideBar
+                    sideBar={sideBar}
+                    ></SideBar>
             </div>
         </div>
     );
